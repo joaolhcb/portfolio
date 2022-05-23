@@ -1,0 +1,50 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(background2.png);
+}
+
+.avatar{
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.navbar-nav a:hover:not(.active){
+    background-color: rgb(255, 0, 200);
+}
+
+.active{
+    background-color:#9400D3;
+}
+
+.navbar, .bg-footer {
+    background-image: url(background.png);
+}
+
+.margin{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer{
+    color: white;
+}
+
+a:link {
+    color: yellow;
+}
+  
+ a:visited {
+    color: white;
+}
+  
+a:hover {
+    color: purple;
+}
+  
+ a:active {
+    color: blue;
+}
