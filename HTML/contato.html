@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!--My CSS-->
-        <link href="C:\Portfolio\Estilo\estilo.css" rel="stylesheet" type="text/css">
+        <link href="../Estilo/estilo.css" rel="stylesheet" type="text/css">
         
         <!--CS Bootstrap-->
-        <link href="C:\Portfolio\bootstrap\css\bootstrap.min.css" rel="stylesheet" type="text/css">
-    
-        <!--JS Bootstrap-->
-        <script src ="C:\Portfolio\bootstrap\js\bootstrap.min.js"></script>
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     
         <!--Icons-->
-        <link href="C:\Portfolio\fontawesome-free-6.1.1-web\css\all.min.css" rel="stylesheet" type="text/css">
+        <link href="../fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet" type="text/css">
+
+        <!--Javascript-->
+        <script src="../js/forms.js"></script>
         
         <title>Contato</title>
     </head>
@@ -68,7 +68,7 @@
 <!--End of Social Media-->
 
 <!--Forms-->
-<section id="forms">
+<section>
     <div class="container-fluid margin "style="color: white">
         <div class="col-md">
                 <h1 class="text-center">Entre em contato por e-mail:</h1>
@@ -77,26 +77,27 @@
                         <div class="row">
                             <div class="col">
                                 <label for="name">Nome:</label>
-                                <input type="text" class="form-control" placeholder="Seu Primeiro Nome">
+                                <input id="name" type="text" class="form-control" placeholder="Seu Primeiro Nome">
                             </div>
                             <div class="col">
-                                <label for="sobrename">Sobrenome:</label>
-                                <input type="text" class="form-control" placeholder="Seu Sobrenome">
+                                <label for="sobrenome">Sobrenome:</label>
+                                <input id="sobrenome" type="text" class="form-control" placeholder="Seu Sobrenome">
                             </div>
                           </div>
                         <div class="form-group">
-                          <label for="exampleFormControlInput1">E-mail:</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com.br">
+                          <label for="email">E-mail:</label>
+                          <input id="email" type="email" class="form-control" placeholder="nome@exemplo.com.br">
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlInput1">Telefone:</label>
-                            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="(41)99999-9999">
+                            <label for="tel">Telefone:</label>
+                            <input id="tel" type="tel" class="form-control" placeholder="(41)99999-9999">
                           </div>
                         <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Mande uma mensagem para o meu e-mail:</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <label for="mensagem">Mande uma mensagem para o meu e-mail:</label>
+                          <textarea id="mensagem" class="form-control" rows="3"></textarea>
                         </div>
-                          <button type="submit" class="btn btn-primary">Clique para enviar</button>
+                        <input type="submit" onclick="sendMessage()" class="btn btn-primary" value="Envie sua mensagem aqui!">
+                        <input type="submit" onclick="cleanMessage();" class="btn btn-primary" value="Limpar">
                       </form>
         </div>
     </div>
@@ -166,5 +167,12 @@
   <!-- Copyright -->
 </footer>
 <!--End of Footer-->
+
+<!--JS Bootstrap-->
+ <script src ="../bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQuery-->
+<script src="../jQuery/jquery-3.6.0.min.js"></script>
+
 </body>
 </html>
